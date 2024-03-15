@@ -1,0 +1,12 @@
+---
+_metadata:  
+  name: "cisco_ios"
+  weight: 1000
+  description: "Group Definitions for device platform Cisco IOS"
+  is_active: true
+  platform:
+    - name: "cisco_ios"
+acl:
+  name: "SSH-ACCESS"
+  rules:
+    - "permit 192.168.1.199"
