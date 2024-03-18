@@ -5,11 +5,16 @@ _metadata:
   roles:
     - name: "edge"
 bgp:
+  rid: 172.16.0.1
+  log-neighbor-changes: true
+  redistribute:
+  - 10.10.1.0/24
+  - 10.20.2.0/24
   asn: 65252
   neighbors:
   - ip: 10.10.0.30
-    remote-asn: 65252
-  - ip: 10.10.0.25
-    remote-asn: 65252
-  - ip: 10.11.11.10
     remote-asn: 65253
+  - ip: 10.10.0.25
+    remote-asn: 65254
+  - ip: 10.11.11.10
+    remote-asn: 65255
